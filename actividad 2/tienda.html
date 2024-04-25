@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- LINKS DE CSS-->
+		<title>tordo</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/templatemo.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+		<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+		
+		<link rel="stylesheet" href="assets/css/tienda.css" />
+	</head>
+	<body>
+		<!-- BARRA-->
+		<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+			<div class="container text-light">
+				<div class="w-100 d-flex justify-content-between">
+					<div>
+						<i class="fa fa-envelope mx-2"></i>
+						<a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@tordoshop.com</a>
+						<i class="fa fa-phone mx-2"></i>
+						<a class="navbar-sm-brand text-light text-decoration-none" href="https://wa.link/q2nle6">+591 71044259</a>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+		<nav class="navbar navbar-expand-lg navbar-light shadow">
+			<div class="container d-flex justify-content-between align-items-center">
+	
+				<a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+				   TORDO
+				</a>
+	
+				<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+					<div class="flex-fill">
+						<ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">Acerca de</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="tienda.html">Tienda</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contactanos</a>
+							</li>
+						</ul>
+					</div>
+					<div class="navbar align-self-center d-flex">
+						<div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+							<div class="input-group">
+								<input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+								<div class="input-group-text">
+									<i class="fa fa-fw fa-search"></i>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+	
+			</div>
+		</nav>	
+		<!-- Close Header -->
+	
+		<!-- Modal -->
+		<div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="w-100 pt-1 mb-5 text-right">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<form action="" method="get" class="modal-content modal-body border-0 p-0">
+					<div class="input-group mb-2">
+						<input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+						<button type="submit" class="input-group-text bg-success text-light">
+							<i class="fa fa-fw fa-search text-white"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<header>
+			<!-- CONTENIDO DE TIENDA-->
+			<h1>Tienda</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+                            
+							<div class="info-cart-product">
+								
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Oversize</p>
+								<span class="precio-producto-carrito">$80</span>
+                                
+							</div>
+							
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+						<button class="btn-comprar">Comprar</button>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="assets/img/cata4.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Oversize</h2>
+					<p class="price">$36</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+					<button class="btn-info" data-product="Oversize">Info</button>
+					
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="assets/img/canguro 3 2.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>canguro</h2>
+					<p class="price">$24</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+					<button class="btn-info" data-product="canguro">Info</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="assets/img/canguro2.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>canguro negro</h2>
+					<p class="price">$36</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+					<button class="btn-info" data-product="canguro2">Info</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="assets/img/zapas.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>zapatillas skull</h2>
+					<p class="price">$100</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+					<button class="btn-info" data-product="zapas">Info</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="assets/img/cata3.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>pantalon araña</h2>
+					<p class="price">$48</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+					<!-- ID PARA PRODUCTO -->
+					<button class="btn-info" data-product="pantalon-araña">Info</button>
+				</div>
+			</div>
+<!-- Formulario en el modal -->
+<!-- ID PARA MODAL -->
+<div id="modal-pantalon-araña" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+		<!-- ID PARA FROMULARIO -->
+        <div id="pantalon-araña-form" class="hidden-form">
+            <!-- Contenido del formulario -->
+			<form class="formulario-producto">
+				<p class="producto-precio">pantalon araña</p>
+                <div class="text-center">
+                    <img src="assets/img/cata3.jpg" alt="pantalon-araña" class="producto-imagen">
+                </div>
+                <p class="producto-precio">Precio: $48</p>
+                <p class="producto-descripcion">Descripción: "Este pantalón araña es una pieza de moda única que combina estilo y comodidad de una manera excepcional. Inspirado en la estética de las arañas y su intrincada red de telarañas, este pantalón presenta un diseño innovador que cautiva la atención de todos los presentes. Confeccionado con tejidos de alta calidad, este pantalón ofrece una sensación de suavidad y ligereza al usarlo. Su corte moderno y ajustado realza la silueta, mientras que su estampado de telaraña añade un toque de misterio y sofisticación. Perfecto para ocasiones casuales o para destacar en eventos nocturnos, este pantalón araña te brinda un estilo único y audaz que no pasará desapercibido."</p>
+			</form>
+        </div>
+    </div>
+</div>
+<div id="modal-Oversize" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="Oversize-form" class="hidden-form">
+            <!-- Contenido del formulario -->
+			<form class="formulario-producto">
+				<p class="producto-precio">canguro oversize</p>
+                <div class="text-center">
+                    <img src="assets/img/cata4.jpg" alt="Oversize" class="producto-imagen">
+                </div>
+                <p class="producto-precio">Precio: $36</p>
+                <p class="producto-descripcion">Descripción: "Este oversize inspirado en el manga Berserk es una pieza única que captura la esencia oscura y épica de la obra. Confeccionado con materiales de alta calidad y un diseño vanguardista, este oversize te brinda un estilo audaz y distintivo. Su diseño extragrande y holgado ofrece una comodidad incomparable, mientras que su estampado impactante evoca la atmósfera única de Berserk. Con detalles cuidadosamente elaborados y una atención meticulosa a los acabados, este oversize es una declaración de moda que no pasará desapercibida. Ya sea que desees expresar tu amor por el manga o simplemente busques un look urbano y llamativo, este oversize de Berserk es la elección perfecta para destacar en cualquier ocasión."</p>
+			</form>
+        </div>
+    </div>
+</div>
+			
+<div id="modal-canguro" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="canguro-form" class="hidden-form">
+            <!-- Contenido del formulario -->
+			<form class="formulario-producto">
+				<p class="producto-precio">canguro</p>
+                <div class="text-center">
+                    <img src="assets/img/canguro 3 2.jpg" alt="canguro" class="producto-imagen">
+                </div>
+                <p class="producto-precio">Precio: $24</p>
+                <p class="producto-descripcion">Descripción: "Este canguro es el accesorio perfecto para tus actividades diarias. Con un diseño versátil y funcional, este canguro te ofrece comodidad y estilo en cada paso que des. Su diseño ligero y compacto te permite llevar tus pertenencias esenciales de forma cómoda y práctica, mientras que su construcción duradera garantiza una larga vida útil. Con múltiples compartimentos y un diseño ergonómico, este canguro se adapta perfectamente a tus necesidades diarias, ya sea para pasear por la ciudad, hacer deporte o viajar. Disponible en una variedad de colores, este canguro es el complemento ideal para cualquier outfit casual. ¡Hazlo parte de tu estilo urbano y lleva contigo todo lo que necesitas con facilidad y estilo!"</p>
+			</form>	
+        </div>
+    </div>
+</div>
+<div id="modal-zapas" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="zapas-form" class="hidden-form">
+            <!-- Contenido del formulario -->
+			<form class="formulario-producto">
+				<p class="producto-precio">zapatillas skull</p>
+                <div class="text-center">
+                    <img src="assets/img/zapas.jpg" alt="zapas" class="producto-imagen">
+                </div>
+                <p class="producto-precio">Precio: $100</p>
+                <p class="producto-descripcion">Descripción: "Las zapatillas 'Skull' son el complemento perfecto para tu estilo urbano. Confeccionadas con materiales de alta calidad y un diseño moderno, estas zapatillas destacan por su comodidad y durabilidad. Su suela resistente y su amortiguación proporcionan un paso seguro y cómodo en cualquier terreno. Ya sea para un día de paseo por la ciudad o para tus sesiones de entrenamiento, las zapatillas 'Skull' son la elección ideal para destacar con estilo y confort."</p>
+			</form>	
+        </div>
+    </div>
+</div>
+<div id="modal-canguro2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="canguro2-form" class="hidden-form">
+            <!-- Contenido del formulario -->
+           <form class="formulario-producto">
+			<p class="producto-precio">canguro negro skull</p>
+                <div class="text-center">
+                    <img src="assets/img/canguro2.jpg" alt="canguro2" class="producto-imagen">
+                </div>
+                <p class="producto-precio">Precio: $36</p>
+                <p class="producto-descripcion">Descripción: "Este canguro negro con calaveras es la combinación perfecta entre estilo y actitud. Con un diseño único que destaca por sus estampados de calaveras, este canguro añade un toque de rebeldía a tu look urbano. Fabricado con materiales de alta calidad, ofrece comodidad y resistencia para acompañarte en tus aventuras diarias. Su amplio espacio y múltiples compartimentos te permiten llevar tus pertenencias de forma organizada y segura. Sé el centro de atención con este canguro que refleja tu personalidad audaz y auténtica."</p>
+			</form>	
+		</div>
+    </div>
+</div>
+			
+		</div>
+	<!-- SCRIPT-->
+		<script src="assets/js/tienda.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
