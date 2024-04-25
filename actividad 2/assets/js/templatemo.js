@@ -1,10 +1,10 @@
 /*
-
-TemplateMo 559 Zay Shop
-
-https://templatemo.com/tm-559-zay-shop
-
+Descripción: js para todo el apartado visual de la pagina como el index y about.
+Desarrollador: [brandon saucedo]
+Fecha: 2024-04-24
+Cambios: Ninguno
 */
+
 
 'use strict';
 $(document).ready(function() {
