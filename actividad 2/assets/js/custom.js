@@ -1,3 +1,10 @@
+/*
+Descripción: js para el formulario de contactos para guardar en un array y borrar con un boton el array.
+Desarrollador: [brandon saucedo]
+Fecha: 2024-04-24
+Cambios: Ninguno
+*/
+
 // Array para almacenar datos del formulario
 var formDataArray = [];
 // Función para mostrar formulario con datos almacenados
