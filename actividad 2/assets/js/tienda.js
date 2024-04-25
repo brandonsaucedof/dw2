@@ -1,3 +1,10 @@
+/*
+Descripción: js para la pagina de tienda donde se da funcionalidad al carrito  y los productos .
+Desarrollador: [brandon saucedo]
+Fecha: 2024-04-24
+Cambios: Ninguno
+*/
+
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector(
 	'.container-cart-products'
